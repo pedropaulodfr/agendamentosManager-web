@@ -1,0 +1,25 @@
+.container-fluid {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+}
+
+.nav-pills li a:hover {
+    background-color: #40b9ff; /* Azul do Telegram */
+    cursor: pointer;
+}
+
+.sidebar-cabecalho {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.dropdown-item {
+    cursor: pointer;
+}
+
+.dropdown-menu a:hover {
+    color: #40b9ff; /* Azul do Telegram */
+}

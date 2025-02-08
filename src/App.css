@@ -1,38 +1,68 @@
-.App {
-  text-align: center;
+h1 {
+  font-family: "Dosis", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: normal;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.title-page {
+  color: #212529;
+  padding: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+tr, td {
+  font-family: "Roboto", sans-serif;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.gradiente {
+  background-image: linear-gradient(to left, rgba(0, 136, 204, 0.3), rgba(0, 102, 153, 0.3)), url("./assets/background.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+  background-origin: center;
+  background-clip: content-box;
+}
+
+.image-container {
+  position: relative;
+  display: inline-block;
+  width: fit-content;
+}
+
+.profile-image {
+  transition: 0.3s ease-in-out;
+  width: 150px; /* Ajuste conforme necessário */
+  height: 150px; /* Ajuste conforme necessário */
+}
+
+.image-container:hover .profile-image {
+  filter: brightness(50%);
+}
+
+.overlay {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  background: rgba(0, 0, 0, 0.5); /* Fundo semitransparente */
+  border-radius: 50%;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.image-container:hover .overlay {
+  opacity: 1;
+}
+
+.overlay-text {
   color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
 }
