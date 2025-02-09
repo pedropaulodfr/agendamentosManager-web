@@ -97,7 +97,6 @@ export default function AddAgendamento ({ handleReturn, dadosEdicao = [] }) {
       })
       .catch((err) => {showMessage( "Erro", err, "error", null); setLoading(false)})
     } else {
-      console.log(objDadosAgendamentos);
       api.put("/Agendamentos/update", objDadosAgendamentos)
         .then((result) => {
           if (result.status !== 200)
