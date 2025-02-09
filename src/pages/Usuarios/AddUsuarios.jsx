@@ -193,6 +193,7 @@ useEffect(() => {
               type="text"
               placeholder="CPF/CNPJ"
               value={dadosUsuario?.cpfcnpj}
+              disabled={Object.keys(dadosEdicao).length > 0}
               onChange={(e) => handleDadosUsuarioChange(e, "cpfcnpj")}
               isInvalid={!!errors.cpfcnpj}
             />
