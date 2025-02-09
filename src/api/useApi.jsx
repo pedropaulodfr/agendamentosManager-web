@@ -20,11 +20,7 @@ export const useApi = () => ({
     },
     signin: async (cpfcnpj, senha) => {
         try {
-            const response = await api.post('/login', { cpfcnpj, senha }, {
-                headers: {
-                    TenantId: tenantId
-                }
-            })
+            const response = await api.post('/login', { cpfcnpj, senha })
             .then((result) => {
                 return result
             })
