@@ -4,7 +4,7 @@ import { getSessionCookie } from '../helpers/cookies';
 const tenantId = window.location.hostname.split('.')[0];
 
 const api = axios.create({
-    baseURL: tenantId == "localhost" ? "http://localhost:5271" : "https://medscan-api.fly.dev"
+    baseURL: tenantId == "localhost" ? "http://localhost:5271" : "https://agendamentosmanager-api.fly.dev"
 });
 
 export const useApi = () => ({

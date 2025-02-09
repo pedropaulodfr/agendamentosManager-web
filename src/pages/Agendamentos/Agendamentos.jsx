@@ -29,10 +29,10 @@ export default function Agendamentos () {
   const [atualizarTabela , setAtualizarTabela]  = useState(false);
 
   const headers = [
-    { value: "Cliente", objectValue: "nome" },
-    { value: "Telefone", objectValue: "telefone" },
     { value: "Data/Hora Agendamento", objectValue: "dataHoraFormatada" },
+    { value: "Cliente", objectValue: "nome" },
     { value: "Serviço", objectValue: "servico" },
+    { value: "Telefone", objectValue: "telefone" },
     { value: "Executado", objectValue: "executadoFormatado" },
   ];
 
@@ -57,7 +57,7 @@ export default function Agendamentos () {
                 m.dataFormatada = FormatToData(m?.data);
                 m.dataFiltro = FormatToFilter(m?.data);
             });
-            const dadosOrdenados = result.data.sort((a, b) => a.nome.localeCompare(b.nome));
+            const dadosOrdenados = result.data.sort((a, b) => a.dataHoraFormatada.localeCompare(b.dataHoraFormatada));
           setDadosAgendamentos(dadosOrdenados);
           set_DadosAgendamentos(dadosOrdenados);
           setLoading(false);

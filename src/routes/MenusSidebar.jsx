@@ -2,6 +2,7 @@ import Agendamentos from "../pages/Agendamentos/Agendamentos";
 import Home from "../pages/Home";
 import Horarios from "../pages/Horarios/Horarios";
 import Servicos from "../pages/Servicos/Servicos";
+import Usuarios from "../pages/Usuarios/Usuarios";
 
 var menus = [
   {
@@ -33,6 +34,14 @@ var menus = [
     icon: "bi bi-clock",
     modulo: ["Admin"],
     component: Horarios,
+    sidebar: true
+  },
+  {
+    path: "/usuarios",
+    name: "Usuários",
+    icon: "bi bi-people",
+    modulo: ["Admin"],
+    component: Usuarios,
     sidebar: true
   },
 ];
