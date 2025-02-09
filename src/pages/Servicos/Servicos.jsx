@@ -59,7 +59,7 @@ export default function Servicos () {
 
   // Ações da tabela
   const actions = [
-    { icon: "bi bi-pencil-square text-white", color: "warning", action: handleEditar},
+    { icon: "bi bi-pencil-square text-white", color: "info", action: handleEditar},
     { icon: "bi bi-x-circle-fill text-white", color: "danger", action: handleDelete},
   ];
 

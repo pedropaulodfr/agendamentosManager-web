@@ -42,7 +42,7 @@ export default function Agendamentos () {
   }
 
   // Ações da tabela
-  const actions = [{ icon: "bi bi-pencil-square text-white", color: "warning", action: handleEditar},];
+  const actions = [{ icon: "bi bi-pencil-square text-white", color: "info", action: handleEditar},];
 
   useEffect(() => {
     setAtualizarTabela(false)

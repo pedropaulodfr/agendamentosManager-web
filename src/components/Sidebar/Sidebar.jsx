@@ -6,7 +6,7 @@ import { useAuth } from "../../contexts/Auth/AuthContext";
 
 import "./Sidebar.css";
 import Loading from "../Loading/Loading";
-import Logo from "../../assets/medscan-min-white.png";
+import Logo from "../../assets/logo-alternativa-white.png";
 import { getSessionCookie } from "../../helpers/cookies";
 import { Container, Row } from "react-bootstrap";
 
@@ -62,7 +62,7 @@ function Sidebar({ sidebarStatus }) {
                     style={{ margin: "15px" }}
                     className="ms-4 fs-4 d-none d-sm-inline"
                   >
-                    <img src={Logo} style={{ maxWidth: "70px" }}></img>
+                    <img src={Logo} style={{ maxWidth: "140px" }}></img>
                   </span>
                 </a>
                 <CloseButton variant="white" onClick={handleSidebarStatus} />

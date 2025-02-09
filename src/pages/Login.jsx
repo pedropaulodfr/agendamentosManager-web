@@ -10,6 +10,7 @@ import Container from "react-bootstrap/Container";
 import { useAuth } from "../contexts/Auth/AuthContext"
 import Modals from "../components/Modals/Modals";
 import { useApi } from "../api/useApi";
+import Logotipo from "../assets/AgendamentoManager-logo-multicolor.png";
 
 export const Login = () => {
   const auth = useAuth();
@@ -96,7 +97,7 @@ export const Login = () => {
               className=""
               style={{ borderRadius: "15px", padding: "20px", backgroundColor: "#cce7ff", color: "#0088cc" }}
             >
-              <h2>Bem-vindo(a)!</h2>
+              <img src={Logotipo} width={240} />
               <Form.Group
                 as={Row}
                 className="mb-3"
@@ -131,9 +132,9 @@ export const Login = () => {
                   />
                 </Col>
               </Form.Group>
-              <Form.Group className="mb-3">
+              {/* <Form.Group className="mb-3">
                 <Form.Label column sm="4" style={{ cursor: "pointer" }} onClick={setIsRecuperarSenha}>Esqueci a senha</Form.Label>
-              </Form.Group>
+              </Form.Group> */}
               <Row className="justify-content-md-center">
                 <Col md="auto">
                   <Button

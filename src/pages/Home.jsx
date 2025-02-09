@@ -1,5 +1,5 @@
 import React from "react";
-//import Logotipo from "../assets/medscan-logo-verde.png";
+import Logotipo from "../assets/AgendamentoManager-logo-multicolor.png";
 
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
@@ -17,14 +17,14 @@ export default function Home() {
       <Row className="justify-content-md-center">
         <Col>
           <div
-            className="logo"
+            className="logo mt-3"
             style={{
               display: "flex",
               flexDirection: "column",
               alignItems: "center",
             }}
           >
-            <img src={null} width={250} />
+            <img src={Logotipo} width={500} />
           </div>
         </Col>
       </Row>
@@ -66,10 +66,10 @@ export default function Home() {
       {getSessionCookie()?.perfil == "Admin" &&
         <Row className="justify-content-md-center">
           <Col md="auto">
-            <Button variant="outline-success" className="m-2 mt-0.5" onClick={() => {handleCard("agendamentos")}}>
+            <Button variant="outline-info" className="m-2 mt-0.5" onClick={() => {handleCard("agendamentos")}}>
               Agendamentos
             </Button>
-            <Button variant="outline-info" className="m-2 mt-0.5" onClick={() => {handleCard("usuarios")}}>
+            <Button variant="outline-success" className="m-2 mt-0.5" onClick={() => {handleCard("usuarios")}}>
               Usuários
             </Button>
           </Col>
