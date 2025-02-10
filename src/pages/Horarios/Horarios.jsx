@@ -39,7 +39,7 @@ export default function Horarios () {
           api.delete("/Horarios/delete", item.id).then((result) => {
             if (result.status !== 200) throw new Error(result?.response?.data?.message);
               
-            showMessage( "Sucesso", "Serviço excluído com sucesso!", "success", null);
+            showMessage( "Sucesso", "Horário excluído com sucesso!", "success", null);
             setLoading(false);
             setAtualizarTabela(true)
           })

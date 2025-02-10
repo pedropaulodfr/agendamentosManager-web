@@ -3,7 +3,7 @@ import Swal from "sweetalert2";
 export const showMessage = (title, text, icon, function_confirmation) => {
   Swal.fire({
     title: title,
-    text: text,
+    text: icon == "error" ? String(text)?.replace("Error: ", "") : text,
     icon: icon,
     footer: "©" + new Date().getFullYear() + " MedScan",
   }).then(() => {

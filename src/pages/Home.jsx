@@ -24,7 +24,7 @@ export default function Home() {
               alignItems: "center",
             }}
           >
-            <img src={Logotipo} width={500} />
+            <img src={Logotipo} width={300} />
           </div>
         </Col>
       </Row>
